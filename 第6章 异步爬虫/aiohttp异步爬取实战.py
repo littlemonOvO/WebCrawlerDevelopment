@@ -48,6 +48,7 @@ async def scrape_api(session: aiohttp.ClientSession, url):
         except asyncio.TimeoutError:
             logging.error(f'timeout error occurred while scraping {url}', exc_info=True)
 
+
 # 爬取列表页，返回响应结果
 async def scrape_index(session, page):
     url = INDEX_URL.format(offset=(page * PAGE_SIZE))
