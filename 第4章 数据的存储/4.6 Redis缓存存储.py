@@ -156,7 +156,6 @@ def hash_operation():
     redis.hvals('price')
     # 获取指定散列表中的所有映射键值对
     redis.hgetall('price')
-    pass
 
 
 if __name__ == '__main__':
